@@ -8,7 +8,8 @@ export default function Home() {
       <LandingPage />
       <div className="flex justify-center">
         <video
-          src="/Revu Demo.mp4"
+          src="/Revu-Landing-Page
+          /Revu Demo.mp4"
           controls
           style={{ width: "800px", height: "600px" }}
         />
