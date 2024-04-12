@@ -12,8 +12,7 @@ export function Header() {
           <Link className="flex items-center space-x-2" href="#">
             {/* <FlagIcon className="w-12 h-12" /> */}
             <img
-              src="/Revu-Landing-Page
-/logo.png"
+              src="https://aqzhen.github.io/Revu-Landing-Page/logo.png"
               alt="Logo"
               className="w-12 h-12"
             />
