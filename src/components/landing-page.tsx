@@ -85,8 +85,8 @@ export function LandingPage() {
                   Be the first to experience the future of E-Commerce
                 </h2>
                 <p className="max-w-[600px] text-gray-900 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
-                  Discover why customers are leaving. Say goodbye to guesswork
-                  and hello to targeted marketing with precision.
+                  Uncover why your customers leave. Drive sales and loyalty by
+                  discovering exactly what they want. All in real-time.
                 </p>
               </div>
               <form
