@@ -11,11 +11,7 @@ export function Header() {
         <div className="flex items-center space-x-4">
           <Link className="flex items-center space-x-2" href="#">
             {/* <FlagIcon className="w-12 h-12" /> */}
-            <img
-              src="/Revu-Landing-Page/logo.png"
-              alt="Logo"
-              className="w-12 h-12"
-            />
+            <img src="/logo.png" alt="Logo" className="w-12 h-12" />
             <span className="text-2xl font-bold tracking-tighter">Revu</span>
           </Link>
         </div>
