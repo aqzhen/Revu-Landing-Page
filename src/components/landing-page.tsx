@@ -34,13 +34,13 @@ export function LandingPage() {
           <div className="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
             <div className="flex flex-col justify-center space-y-16">
               <div className="space-y-10">
-                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm ">
                   Early Access
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Be the first to experience the future of E-Commerce
                 </h2>
-                <p className="max-w-[600px] text-gray-900 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-800">
+                <p className="max-w-[600px] text-gray-900 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
                   Discover why customers are leaving. Say goodbye to guesswork
                   and hello to targeted marketing with precision.
                 </p>
@@ -63,14 +63,14 @@ export function LandingPage() {
               <ul className="grid gap-8 py-8 mb-4 mt-12">
                 <li className="flex items-start">
                   <CheckIcon className="mr-2 mt-1 h-4 w-4" />
-                  <span className="text-gray-900 md:text-base lg:text-sm xl:text-base dark:text-gray-800">
+                  <span className="text-gray-900 md:text-base lg:text-sm xl:text-base">
                     Segment and understand the entire customer decision journey
                     to optimize engagement and conversion strategies
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckIcon className="mr-2 mt-1 h-4 w-4" />
-                  <span className="text-gray-900 md:text-base lg:text-sm xl:text-base dark:text-gray-800">
+                  <span className="text-gray-900 md:text-base lg:text-sm xl:text-base">
                     Gain actionable insights into customer preferences and
                     behaviors to inform targeted marketing and product
                     development
@@ -78,7 +78,7 @@ export function LandingPage() {
                 </li>
                 <li className="flex items-start">
                   <CheckIcon className="mr-2 mt-1 h-4 w-4" />
-                  <span className="text-gray-900 md:text-base lg:text-sm xl:text-base dark:text-gray-800">
+                  <span className="text-gray-900 md:text-base lg:text-sm xl:text-base">
                     Automate tailored follow-ups based on customer touchpoints
                     to boost CRO and customer satisfaction
                   </span>
@@ -94,7 +94,7 @@ export function LandingPage() {
           <h3 className="text-3xl font-bold tracking-tighter sm:text-5xl">
             Experience Revu
           </h3>
-          <p className="max-w-[600px] text-center text-gray-900 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-800">
+          <p className="max-w-[600px] text-center text-gray-900 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
             Unleash the power of AI-powered sales enablement
           </p>
         </div>
