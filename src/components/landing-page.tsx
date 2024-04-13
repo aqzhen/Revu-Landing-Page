@@ -23,10 +23,54 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+"use client";
+
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export function LandingPage() {
+  const [email, setEmail] = useState("");
+  const [response, setResponse] = useState("");
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+
+  function validateEmail(email: string) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      return true;
+    }
+    return false;
+  }
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Handle form submission here
+    if (!validateEmail(email)) {
+      setResponse("Please enter a valid email address!");
+    } else {
+      // Submit the form
+      const data = { waitlist_id: 15757, email: email };
+      try {
+        const response = await fetch(
+          "https://api.getwaitlist.com/api/v1/signup",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          }
+        );
+        await response.json();
+        setResponse("Look out for an email soon :)");
+      } catch (error) {
+        setResponse("An error occurred. Please try again.");
+      }
+    }
+  };
+
   return (
     <div className="w-full">
       <section className="w-full py-12 md:py-24 lg:py-32">
@@ -45,15 +89,21 @@ export function LandingPage() {
                   and hello to targeted marketing with precision.
                 </p>
               </div>
-              <form className="grid gap-4 md:gap-8 sm:grid-cols-[1fr_250px]">
+              <form
+                className="grid gap-4 md:gap-8 sm:grid-cols-[1fr_250px]"
+                onSubmit={handleSubmit}
+              >
                 <Input
                   className="max-w-sm w-full grid-areas-input"
                   placeholder="Enter your email"
                   type="email"
+                  value={email}
+                  onChange={handleEmailChange}
                 />
                 <Button className="w-full md:w-[200px]" type="submit">
                   Join the Waitlist
                 </Button>
+                <p>{response}</p> {/* Render the response here */}
               </form>
             </div>
             {/* Updated styling to shift the list to the right */}
@@ -89,7 +139,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section className="w-full py-6 md:py-12 lg:py-16">
+      <section className="w-full py-6 md:py-12 lg:py-2">
         <div className="container flex flex-col items-center justify-center space-y-4 px-4 md:px-6">
           <h3 className="text-3xl font-bold tracking-tighter sm:text-5xl">
             Experience Revu
