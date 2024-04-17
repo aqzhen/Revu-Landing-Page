@@ -81,7 +81,7 @@ export function LandingPage() {
                 <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm ">
                   Early Access
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-7xl">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
                   Be the first to experience the future of E-Commerce
                 </h2>
                 <p className="max-w-[600px] text-gray-900 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
