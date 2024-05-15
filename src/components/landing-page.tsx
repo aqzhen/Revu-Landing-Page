@@ -81,7 +81,7 @@ export function LandingPage() {
                 <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm ">
                   Early Access
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
                   Be the first to experience the future of E-Commerce
                 </h2>
                 <p className="max-w-[600px] text-gray-900 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
@@ -90,7 +90,7 @@ export function LandingPage() {
                 </p>
               </div>
               <form
-                className="grid gap-4 md:gap-8 sm:grid-cols-[1fr_250px]"
+                className="grid gap-4 md:gap-8 sm:grid-cols-[1fr_250px] md:grid-cols-[1fr_450px]"
                 onSubmit={handleSubmit}
               >
                 <Input
@@ -100,16 +100,15 @@ export function LandingPage() {
                   value={email}
                   onChange={handleEmailChange}
                 />
-                <Button className="w-full md:w-[200px]" type="submit">
+                <Button className="w-full md:w-[200px] " type="submit">
                   Join the Waitlist
                 </Button>
                 <p>{response}</p> {/* Render the response here */}
               </form>
             </div>
-            {/* Updated styling to shift the list to the right */}
-            <div className="flex justify-end lg:justify-start">
-              {" "}
-              {/* Use justify-end for right alignment on large screens */}
+            {/* Updated styling to shift the list to the left */}
+            <div className="flex justify-start lg:justify-start">
+              {" "} {/* Use justify-start for left alignment on large screens */}
               <ul className="grid gap-8 py-8 mb-4 mt-12">
                 <li className="flex items-start">
                   <CheckIcon className="mr-2 mt-1 h-4 w-4" />
