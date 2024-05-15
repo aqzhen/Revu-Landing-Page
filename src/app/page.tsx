@@ -11,7 +11,7 @@ export default function Home() {
         <LandingPage />
         <div className="flex justify-center">
           <video
-            src="/demo.mp4"
+            src="/demo.mov"
             controls
             style={{ width: "800px", height: "600px" }}
           />
